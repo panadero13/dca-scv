@@ -73,7 +73,7 @@ int main()
 
             case '6': printf( "\n   Introduzca numero a elevar al cubo: " );
                       scanf( "%lf", &n1);
-                      printf( "\n   %lf ^ 2 = %lf\n", n1, n1 * n1 * n1 );
+                      printf( "\n   %lf ^ 3 = %lf\n", n1, n1 * n1 * n1 );
                       break;
 
                       /* Opción 6: Raiz cuadrada de un numero */

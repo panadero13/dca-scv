@@ -14,18 +14,19 @@ int main()
         printf( "\n   3. Multiplicar dos numeros.");
         printf( "\n   4. Dividir dos numeros.");
         printf( "\n   5. Cuadrado de un numero.");
-        printf( "\n   6. Raiz cuadrada de un numero.");
-        printf( "\n   7. Salir.\n" );
+        printf( "\n   6. Cubo de un numero.");
+        printf( "\n   7. Raiz cuadrada de un numero.");
+        printf( "\n   8. Salir.\n" );
 
         /* Filtramos la opción elegida por el usuario */
         do
         {
-            printf( "\n   Introduzca opcion (1-7): ");
+            printf( "\n   Introduzca opcion (1-8): ");
             fflush( stdin );
             scanf( "%c", &opcion);
 
-        } while ( opcion < '1' || opcion > '7' );
-        /* La opción sólo puede ser '1', '2', '3', '4' , '5', '6' o '7' */
+        } while ( opcion < '1' || opcion > '8' );
+        /* La opción sólo puede ser '1', '2', '3', '4' , '5', '6', '7' o '8' */
 
         switch ( opcion )
         {
@@ -70,13 +71,18 @@ int main()
                       printf( "\n   %lf ^ 2 = %lf\n", n1, n1 * n1 );
                       break;
 
+            case '6': printf( "\n   Introduzca numero a elevar al cubo: " );
+                      scanf( "%lf", &n1);
+                      printf( "\n   %lf ^ 2 = %lf\n", n1, n1 * n1 * n1 );
+                      break;
+
                       /* Opción 6: Raiz cuadrada de un numero */
-            case '6': printf( "\n   Introduzca numero que radicar: " );
+            case '7': printf( "\n   Introduzca numero que radicar: " );
                       scanf( "%lf", &n1);
                       printf( "\n   Raiz de %lf = %lf\n", n1, sqrt(n1) );
                       break;
         }
-    } while ( opcion != '7' );
+    } while ( opcion != '8' );
 
     return 0;
 }

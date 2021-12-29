@@ -8,7 +8,7 @@ int main()
 
     do
     {
-        printf( "\n   >>> MENU CALCULADORA <<<" );
+        printf( "\n   >>> MENU CALCULADOR <<<" );
         printf( "\n\n   1. Sumar dos numeros.");
         printf( "\n   2. Restar dos numeros.");
         printf( "\n   3. Multiplicar dos numeros.");
